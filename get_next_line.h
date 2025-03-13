@@ -21,6 +21,8 @@ char	*strjoin(char *s1, char *s2);
 char	*get_line(char *str);
 char	*trim_line(char *str);
 
-# define BUFFER_SIZE 42
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
 
+# endif
 #endif
